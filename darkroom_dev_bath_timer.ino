@@ -1,5 +1,30 @@
-/* Development baths timer */
-/* v1.3 */
+/*
+ * Darkroom Multi-Timer (Dev / Stop / Fix) v1.3
+ * Copyright (c) 2026 Kobe Vermeire
+ * 
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ * 
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ * 
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ * 
+ * External Libraries Used:
+ * - TM1637Display (by Avishay Orpaz) - Licensed under GNU Lesser General Public License v3.0 (LGPL-3.0)
+ * - Encoder (by Paul Stoffregen)      - Licensed under MIT License
+ */
+
 // Darkroom Multi-Timer (Dev / Stop / Fix)
 // TM1637 4-digit displays + 3 rotary encoders (with push) + piezo
 //
@@ -27,9 +52,6 @@
 // Volume: tone() kent geen volume. Daarom wordt de piëzo nu via Timer1 aangestuurd
 // met een variabele duty-cycle (smallere puls = stiller). Werkt met een PASSIEVE piëzo.
 //
-// Libraries:
-//   - TM1637Display (by Avishay Orpaz)
-//   - Encoder (by Paul Stoffregen)
 //
 // Bedrading (ATmega32U4: Pro Micro / Leonardo) => kies Arduino Leonardo als board in de IDE
 //   Displays (CLK,DIO): DEV 14,15 | STOP 10,16 | FIX 9,8
