@@ -19,3 +19,7 @@ When a timer finishes, it beeps three times and the display flashes "00:00".
 - Double-click the STOP encoder -> volume mode (“uo 0”..“uo 8”, 0 = mute).
   - Turn = adjust volume (short test beep at each step).
   - Click = save to EEPROM and return to normal
+
+## Dependencies & Licenties
+* **TM1637Display** door Avishay Orpaz – Gelicentieerd onder de [GNU LGPL v3.0](https://github.com/avishayorpaz/arduino-tm1637/blob/master/LICENSE).
+* **Encoder** door Paul Stoffregen – Gelicentieerd onder de [MIT License](https://github.com/PaulStoffregen/Encoder/blob/master/LICENSE).
